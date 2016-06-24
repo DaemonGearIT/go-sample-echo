@@ -182,8 +182,6 @@ func main() {
 		return c.String(http.StatusOK, "Hello world!")
 	})
 
-	//e.File("/upload", "public/index.html")
-
 	//Routing User handler method
 	e.GET("/users", h.getAllUsers)
 	e.GET("/users/:email", h.getUser)
